@@ -1,6 +1,6 @@
 void main() {
   String yourText1 = 'ular';
-  String yourText2 = 'ular';
+  String yourText2 = 'luar';
 
   // isAnagram(yourText1, yourText2);
   print(isAnagram(yourText1, yourText2));
@@ -13,5 +13,8 @@ bool isAnagram(String text1, String text2) {
   sorted1.sort();
   sorted2.sort();
 
-  return identical(sorted1, sorted2);
+  if (sorted1 == sorted2) {
+    return true;
+  }
+  return false;
 }
